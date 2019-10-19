@@ -1,0 +1,17 @@
+name: UnioMarket
+main: me.uniodex.uniomarket.UnioMarket
+author: 'UnioDex'
+version: 3.0
+
+depend: [WorldGuard, UnioEssentials]
+softdepend: [Jobs, UnioSpawners, TradeMe, PlaceholderAPI]
+
+commands:
+  uniomarket:
+    description: uniomarket
+  points:
+    description: points
+    aliases: [puan]
+  credits:
+    description: credits
+    aliases: [kredi]

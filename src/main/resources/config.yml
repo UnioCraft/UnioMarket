@@ -1,0 +1,59 @@
+database:
+  hostName: test.com
+  port: 3306
+  userName: test
+  password: test
+server: Factions
+credit:
+  databaseName: "credit"
+  creditColumnName: "kredi"
+points:
+  databaseName: "points"
+  pointColumnName: "points"
+  giveDaily: true
+  pointsToGiveDaily: 5
+  pointsToGiveMiners: 1
+  pointsToGiveHunters: 1
+crates:
+  - oy
+  - yaygin
+  - nadir
+  - efsanevi
+databaseInfos:
+  ozelesya:
+    dbName: factions
+    tableName: ozelesya
+    usernameColumn: player
+  credit:
+    dbName: genel
+    tableName: kredi
+    usernameColumn: isim
+  points:
+    dbName: factions
+    tableName: unio_points
+    usernameColumn: player
+  crates:
+    dbName: factions
+    tableName: kasalar
+    usernameColumn: player
+items:
+  oykasasi:
+    displayName: "Oy Kasası"
+    database: crates
+    itemColumn: "oy"
+    spaceNeeded: 0
+    rewardCommands:
+      - crate give virtual oy %amount% %player%
+  alankazmasi:
+    displayName: "Büyülü Alan Kazması"
+    database: ozelesya
+    itemColummn: alankazmasi
+    spaceNeeded: 1
+    rewardCommands:
+      - uci give multiblock %player%
+logging:
+  ignoredNamesContains:
+    - Boss
+    - VIP
+  ignoredNamesEquals:
+    - '&bHuni'

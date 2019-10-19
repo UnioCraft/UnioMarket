@@ -1,0 +1,74 @@
+prefix:
+  bilgiPrefix: "&b&lUNIOCRAFT &2->&a"
+  dikkatPrefix: "&b&lUNIOCRAFT &2->&6"
+  hataPrefix: "&b&lUNIOCRAFT &2->&c"
+  consolePrefix: "[UnioMarket] "
+plugin:
+  reloaded: "Plugin reloaded."
+command:
+  playerOnly: "playerOnly"
+  uniomarket:
+    wrongUsage: "Wrong usage"
+    itemCouldntFind: "itemCouldntFind"
+  credits:
+    usage: "wrongUsage kredin: %credit%"
+    wrongNumber: "wrongNumber"
+    mustBeBetween1and100: "mustBeBetween1and100"
+    notEnoughCredit: "notEnoughCredit"
+    success: "success"
+    failure: "failure"
+    mustBeCreditCheck: "Elinizdeki item credit check olmalı"
+    deposited: "deposited %amount%"
+    depositFailed: "deposit failed. contact admin"
+  points:
+    see: "You have %points% points."
+    seeother: "%player% have %points% points."
+    given: "You give %player% %points% points."
+    taken: "You took from %player% %points% points."
+    set: "You set %player%'s point amount to %points% points."
+    failed: "Bir hata oluştuğu için işlem başarısız."
+points:
+  dailyPointsGiven: |
+    &a
+    &a
+    %points% puan verildi.
+    &a
+    &a
+  youFoundPointsWhileMining: |
+    &a
+    You found %points% while mining.
+    &a
+  youFoundPointsWhileHunting: |
+    &a
+    You found %points% while hunting.
+    &a
+activation:
+  youHaveToBuyFirst: "youHaveToBuyFirst"
+  notEnoughSpace: "notEnoughSpace"
+  itemActivated: "%item% itemActivated"
+  itemActivationFailed: "%item% itemActivationFailed"
+  cratesActivated: "tebrikler. kasalar aktif"
+  cratesActivatedFor: "%player% için kasaları etkinleştirdiniz."
+items:
+  creditCheck:
+    name: "&6&lKredi Çeki: &b%amount% TL Kredi" # Don't start it with a variable and don't use numbers!
+    lore:
+      - "&b&lBu kredi çeki %player% tarafından satın alınmıştır."
+      - "&b&lBozdurmak için elinize alın ve /kredi bozdur yazın."
+logging:
+  place: "[PLACE]: %player% isimli oyuncu bir %item% ürünü yerleştirdi. Lokasyon: %location%"
+  break: "[BREAK]: %player% isimli oyuncu bir %item% ürünü kırdı. Lokasyon: %location%"
+  pickup: "[PICKUP]: %player% isimli oyuncunun envaterine bir %item% ürünü girdi. Lokasyon: %location%"
+  drop: "[DROP]: %player% isimli oyuncu envanterinden bir %item% ürünü düşürdü. Lokasyon: %location%"
+  deathdrop: "[DEATHDROP]: %player% isimli oyuncu öldü ve envanterinden bir %item% ürünü düşürdü. Lokasyon: %location%"
+  trade: "[TRADE]: %player1% isimli oyuncu %player2% isimli oyuncuyla ticaret yaparak bir %item% ürünü aldı."
+  activationSuccess: "[ACTIVATION]: %player% isimli oyuncu bir %item% ürünü etkinleştirdi."
+  activationError: "[ACTIVATION]: %player% isimli oyuncu %item% ürünü etkinleştirirken bir sorun yaşandı. Sebep: %reason%"
+  illegalItem: "[ILLEGAL-ITEM] %player% isimli oyuncunun üzerinde %item% isimli eşya bulundu ve silindi."
+  creditDeposited: "[CREDIT-DEPOSIT] %player% isimli oyuncu %amount% kredi bozdurdu."
+  creditWithdrawn: "[CREDIT-WITHDRAW] %player% isimli oyuncu %amount% TL değerinde kredi çeki aldı."
+  creditDepositFailed: "[CREDIT-DEPOSIT] %player% isimli oyuncu %amount% kredi bozdururken hata oluştu!"
+  creditWithdrawFailed: "[CREDIT-WITHDRAW] %player% isimli oyuncu %amount% TL değerinde kredi çeki alırken hata oluştu!"
+protections:
+  youCantPutPaperToAnvil: "youCantPutPaperToAnvil"
+  illegalItemsFoundAndRemoved: "%player% üstünüzde yasadışı eşya %item% bulundu ve silindi."
